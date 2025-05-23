@@ -1,0 +1,17 @@
+{
+  "name": "site-leerob",
+  "compatibility_date": "2025-05-23",
+  "main": "./.next/server/middleware-build-manifest.js",
+  "build": {
+    "command": "next build"
+  },
+  "site": {
+    "bucket": "./.next/static"
+  },
+  "routes": [
+    {
+      "pattern": "^/_next/static/.*",
+      "serve": "/static/*"
+    }
+  ]
+}
